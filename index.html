@@ -13,13 +13,21 @@
     <header>
         <div class="container">
             <div class="header">
-                <div class="logo">
-                    <h1>
-                        <a href="#">Prosecurse</a>
-                    </h1>
-                </div>
-        
-                <nav>
+                <div class="mobile-menu-wrapper">
+                    <div class="logo">
+                        <h1>
+                            <a href="#">Prosecurse</a>
+                        </h1>
+                    </div>
+    
+                    <div class="mobile-nav-icon">
+                        <i class="fal fa-search"></i>
+                        <i class="fal fa-shopping-cart"></i>
+                        <i id="menu" class="fal fa-bars"></i>
+                    </div>
+                </div>    
+
+                <nav class="navBar">
                     <ul class="nav-links">
                         <li>
                             <a href="#">Home</a>
@@ -192,5 +200,7 @@
             </div>
         </div>
     </section>
+
+    <script src="js/app.js"></script>
 </body>
 </html>
