@@ -14,6 +14,7 @@
     --second-bg-color: #252B42;
     --title-color: #252B42; 
     --text-color: #737373;
+    --main-yellow: #D0A144;
     --bg-gradient-color: linear-gradient(270deg, #295C7A -1.04%, #0072B5 100%);
 
     /* !Height Width */
@@ -57,6 +58,24 @@
 
 .button-group a:nth-child(2) {
     margin-left: 10px;
+}
+
+.title {
+    font-family: var(--font-martel);
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.2px;
+}
+
+.title-sub-text {
+    font-family: var(--font-open-sans);
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    margin-top: 15px;
 }
 
 a {
@@ -124,7 +143,7 @@ header {
     display: flex;
     flex-direction: column;
     max-width: 500px;
-    margin-top: 5%;
+    margin-top: 80px;
 }
 
 .head .head-text h1 {
@@ -191,8 +210,48 @@ header {
     letter-spacing: 0.2px;
 }
 
-.test {
-    height: 500px;
+.clients__block {
+    background-color: #FAFAFA;
+    text-align: center;
+    padding: 150px 0;
+}
+
+.result__block {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.result__block .result__blok-item {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 25px 25px;
+    width: 150px;
+    height: 150px;
+}
+
+.result__block .result__blok-item i {
+    color: var(--main-yellow);
+    font-size: 40px;
+}
+
+.result__block .result__blok-item h3 {
+    font-family: var(--font-martel);
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.result__block .result__blok-item span {
+    font-size: var(--font-martel);
+    color: var(--text-color);
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 @media (max-width: 768px) {
@@ -243,6 +302,23 @@ header {
 
     .head__card .head__card-item:not(:first-child) {
         margin-top: 30px;
+    }
+
+    .clients__block {
+        padding: 80px 0;
+    }
+
+    .result__block {
+        flex-direction: column;
+    }
+
+    .result__block .result__blok-item:not(:first-child) {
+        margin-top: 30px;
+    }
+
+    .result__block .result__blok-item {
+        width: 200px;
+        height: 200px;
     }
 }
 
