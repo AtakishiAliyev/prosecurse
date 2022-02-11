@@ -288,6 +288,7 @@ header {
     font-weight: 700;
     font-size: 40px;
     line-height: 50px;
+    margin: 15px 0;
 }
 
 .result__block .result__blok-item span {
@@ -312,6 +313,27 @@ header {
 
 .who-we-are__item .left-side {
     width: 50%;
+    position: relative;
+}
+
+.who-we-are__item .left-side .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.58%, rgba(56, 56, 56, 0.84) 100%);
+}
+
+.who-we-are__item .left-side .play-button {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    z-index: 100;
 }
 
 .who-we-are__item .left-side img {
@@ -408,7 +430,7 @@ header {
 }
 
 .card__box .card__box-item {
-    width: 20%;
+    width: 25%;
     background-color: white;
     padding: 50px 60px;
     display: flex;
@@ -454,6 +476,122 @@ header {
     border-radius: 5px;
     border-color: var(--main-yellow);
     color: var(--main-yellow);
+}
+
+.contact-us__block {
+    background-color: #fff;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-us__block .left-side h3 {
+    font-family: var(--font-martel);
+    color: var(--title-color);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.contact-us__block .left-side p {
+    font-family: var(--font-open-sans);
+    color: var(--text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.contact-us__block .right-side .btn-primary {
+    border-radius: 5px;
+}
+
+footer .up {
+    background: var(--bg-gradient-color);
+    padding: 50px 0;
+}
+
+.footer-up__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-up__block .footer-up__item h3 {
+    font-family: var(--font-martel);
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer-up__block .footer-up__item ul > li + li {
+    margin-top: 10px;
+}
+
+.footer-up__block .footer-up__item ul li a {
+    font-family: var(--font-open-sans);
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.footer-up__block .footer-up__item ul:last-child li {
+    display: flex;
+    align-items: center;
+}
+
+.footer-up__block .footer-up__item ul:last-child li i {
+    margin-right: 10px;
+    color: #8EC2F2;
+}
+
+footer .down {
+    background: white;
+    padding: 25px 0;
+}
+
+.footer-down__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-down__block h3 {
+    font-family: var(--font-open-sans);
+    color: var(--text-color);
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+.footer-down__block .social-networks ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-down__block .social-networks ul > li + li {
+    margin-left: 20px;
+}
+
+.footer-down__block .social-networks a i.fa-facebook-square {
+    color: #335BF5;
+}
+
+.footer-down__block .social-networks a i.fa-instagram {
+    color: #E61F5A;
+}
+
+.footer-down__block .social-networks a i.fa-twitter {
+    color: #21A6DF;
+}
+
+.footer-down__block .social-networks a i.fa-youtube {
+    color: #E42F08;
 }
 
 @media (max-width: 768px) {
@@ -597,6 +735,15 @@ header {
     .card__box .card__box-item.active {
         padding: 60px 60px;
     }
+
+    .footer-up__block {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-up__block > .footer-up__item + .footer-up__item {
+        margin-top: 30px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -606,6 +753,11 @@ header {
 
     .partners__block-item > .img-box + .img-box {
         margin-top: 60px;
+    }
+
+    .who-we-are__item .left-side .play-button {
+        width: 50px;
+        height: 50px;
     }
 
     .empty-box {
@@ -632,5 +784,23 @@ header {
 
     .input-box {
         width: 100%;
+    }
+
+    .contact-us__block {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contact-us__block .right-side {
+        margin-top: 30px;
+    }
+
+    .footer-down__block {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-down__block .social-networks {
+        margin-top: 30px;
     }
 }
