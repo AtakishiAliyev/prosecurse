@@ -1,1 +1,1 @@
-[Project online link](https://atakishialiyev.github.io/sneaker-shop)
+[Project online link](https://atakishialiyev.github.io/prosecurse)
